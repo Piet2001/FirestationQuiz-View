@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Great'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Hello world
-      </header>
+      <Greet />
     </div>
   );
 }
