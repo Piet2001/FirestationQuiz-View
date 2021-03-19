@@ -1,15 +1,14 @@
 import './App.css';
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Game from '../Game/Game'
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <body>
-          This is the app. And down here is the footer of the page!
-        </body>
-        <Footer />
+      <Header />
+      <Game />
+      <Footer />
     </div>
   );
 }
