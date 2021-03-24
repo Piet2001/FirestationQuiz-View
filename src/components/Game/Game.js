@@ -1,12 +1,21 @@
 import React from 'react'
 import Quiz from './Quiz'
 import Stats from './Stats'
+import { Col, Row } from 'react-bootstrap'
 
-export default function Game() {
+function Game() {
     return (
         <div className='container'>
-            <Quiz />
-            <Stats />
+            <Row>
+                <Col xs={8}>
+                    <Quiz />
+                </Col>
+                <Col xs={4}>
+                    <Stats />
+                </Col>
+            </Row>
         </div>
-    )
+    );
 }
+
+export default Game;
