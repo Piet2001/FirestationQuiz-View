@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
-import './Quiz.css';
+import './Game.css';
 
 function Quiz() {
     return (
@@ -20,7 +20,7 @@ function Quiz() {
                     <Button className='Option-Button'>Asten</Button>
                 </Col>
                 <Col>
-                    <Button className='Option-Button'>Deurne</Button>
+                    <Button className='Option-Button'>Eindhoven-Centrum</Button>
                 </Col>
             </Row>
             <Row>

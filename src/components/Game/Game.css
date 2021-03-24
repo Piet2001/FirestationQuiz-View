@@ -4,5 +4,8 @@
 }
 
 .Option-Button {
-    margin: 10px;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    align-items: center;
 }
