@@ -1,3 +1,4 @@
+import './Game.css'
 import React from 'react'
 import Quiz from './Quiz'
 import Stats from './Stats'

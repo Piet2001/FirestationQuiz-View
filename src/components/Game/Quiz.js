@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
-import './Game.css';
 
 function Quiz() {
     return (

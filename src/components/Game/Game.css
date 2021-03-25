@@ -9,3 +9,34 @@
     height: 90%;
     align-items: center;
 }
+
+.Game {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    left: auto;
+    float: left;
+}
+
+.Stats {
+    position: absolute;
+    background-color: crimson;
+    color: white;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    /* background: rgb(3, 255, 255); */
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    margin: auto;
+}
