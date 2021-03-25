@@ -8,6 +8,7 @@
     width: 90%;
     height: 90%;
     align-items: center;
+    background: blue;
 }
 
 .Game {
@@ -22,7 +23,7 @@
 
 .Stats {
     position: absolute;
-    background-color: crimson;
+    background-color: red;
     color: white;
     height: 50%;
     width: 100%;

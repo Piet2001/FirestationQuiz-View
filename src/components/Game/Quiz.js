@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
 
-function Quiz() {
+const Quiz = () => {
     return (
         <div className='Game'>
             <h1>Which fire station is this one?</h1>
@@ -16,18 +16,18 @@ function Quiz() {
             </Row>
             <Row>
                 <Col>
-                    <Button className='Option-Button'>Asten</Button>
+                    <Button className='Option-Button' id='option1' value={'Asten'}>{'Asten'}</Button>
                 </Col>
                 <Col>
-                    <Button className='Option-Button'>Eindhoven-Centrum</Button>
+                    <Button className='Option-Button' id='option2' value={'Eindhoven-Centrum'}>{'Eindhoven-Centrum'}</Button>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Button className='Option-Button'>Helmond</Button>
+                    <Button className='Option-Button' id='option3' value={'Helmond'}>{'Helmond'}</Button>
                 </Col>
                 <Col>
-                    <Button className='Option-Button'>Mierlo</Button>
+                    <Button className='Option-Button' id='option4' value={'Mierlo'}>{'Mierlo'}</Button>
                 </Col>
             </Row>
 
