@@ -7,6 +7,10 @@ import { Col, Row } from 'react-bootstrap'
 function Game() {
     const onclick = (Option) => {
         alert('Gekozen: ' + Option)
+        console.log("GOK" + Option)
+        if(Option === 'Helmond'){
+            console.log("GOOD")
+        }
     }
 
     return (
