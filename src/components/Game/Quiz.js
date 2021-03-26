@@ -16,7 +16,7 @@ const Quiz = ({OnClick}) => {
             </Row>
             <Row>
                 <Col>
-                    <Button className='Option-Button' id='option1' value={'Asten'} onClick={() => OnClick('Asten')}>{'Asten'}</Button>
+                    <Button className='Option-Button' id='option1' onClick={() => OnClick('Asten')}>{'Asten'}</Button>
                 </Col>
                 <Col>
                 <Button className='Option-Button' id='option2' onClick={() => OnClick('Eindhoven-Centrum')}>{'Eindhoven-Centrum'}</Button>

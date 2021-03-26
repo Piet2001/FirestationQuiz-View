@@ -1,17 +1,21 @@
 import React from 'react'
 import Timer from './Timer'
 
-function Stats() {
+const Stats = () => {
+    var TryCount = 0;
+    var GoodCount = 0;
+    var GamesPlayed = 0;
+
     return (
         <div className='Stats'>
             <h1>Stats</h1>
             <Timer time={600} /> <br />
             <p>
                 Username: {'Demo_User'} <br />
-                Items played: {0} <br />
-                Items Correct: {0} <br />
+                Items played: {TryCount} <br />
+                Items Correct: {GoodCount} <br />
                 <br />
-                Games Played: {0}
+                Games Played: {GamesPlayed}
             </p>
         </div>
     );
