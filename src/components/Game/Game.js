@@ -5,11 +5,15 @@ import Stats from './Stats'
 import { Col, Row } from 'react-bootstrap'
 
 function Game() {
+    const onclick = (Option) => {
+        alert('Gekozen: ' + Option)
+    }
+
     return (
         <div className='container'>
             <Row>
                 <Col xs={8}>
-                    <Quiz />
+                    <Quiz OnClick={onclick}/>
                 </Col>
                 <Col xs={4}>
                     <Stats />
