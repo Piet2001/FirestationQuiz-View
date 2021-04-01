@@ -1,11 +1,16 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 const Timer = (props) => {
-    const [counter, setCounter] = React.useState(props.time);
+    const [counter, setCounter] = useState(props.time);
 
-    React.useEffect(() => {
+    useEffect(() => {
         counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
-      }, [counter]);     
+      }, [counter]); 
+      
+      if(counter===0)
+      {
+        setCounter(props.time)
+      }
           
       return (
         <div>
