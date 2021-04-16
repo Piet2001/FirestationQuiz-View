@@ -1,7 +1,10 @@
 import React from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
 
-const Quiz = ({OnClick}) => {
+const Quiz = ({OnClick, question}) => {
+    console.log("Question from quiz.js")
+    console.log(question.option1)
+
     return (
         <div className='Game'>
             <h1>Which fire station is this one?</h1>
@@ -9,25 +12,25 @@ const Quiz = ({OnClick}) => {
                 <Col>
                     <Image
                         className='FirestationImage'
-                        src='https://media.discordapp.net/attachments/534476070192414730/824276101953880074/Brandweer_Helmond2.jpg'
+                        src={question.imageUrl}
                         fluid
                     />
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Button className='Option-Button' id='option1' onClick={() => OnClick('Asten')}>{'Asten'}</Button>
+                    <Button className='Option-Button' id='option1' onClick={() => OnClick(question.option1)}>{question.option1}</Button>
                 </Col>
                 <Col>
-                <Button className='Option-Button' id='option2' onClick={() => OnClick('Eindhoven-Centrum')}>{'Eindhoven-Centrum'}</Button>
+                <Button className='Option-Button' id='option2' onClick={() => OnClick(question.option2)}>{question.option2}</Button>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Button className='Option-Button' id='option3' onClick={() => OnClick('Helmond')}>{'Helmond'}</Button>
+                    <Button className='Option-Button' id='option3' onClick={() => OnClick(question.option3)}>{question.option3}</Button>
                 </Col>
                 <Col>
-                    <Button className='Option-Button' id='option4' onClick={() => OnClick('Mierlo')}>{'Mierlo'}</Button>
+                    <Button className='Option-Button' id='option4' onClick={() => OnClick(question.option4)}>{question.option4}</Button>
                 </Col>
             </Row>
 
