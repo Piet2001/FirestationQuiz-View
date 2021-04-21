@@ -13,8 +13,6 @@ function Game() {
         getGameData();
     }, []);
 
-
-
     //fetch data
     const getGameData = async () => {
         const res = await fetch('http://localhost:8084/gamedata/new')
