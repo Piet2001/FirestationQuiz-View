@@ -1,6 +1,7 @@
 .FirestationImage {
     border-radius: 100px;
     margin: auto;
+    max-height: 450px;
 }
 
 .Option-Button {
