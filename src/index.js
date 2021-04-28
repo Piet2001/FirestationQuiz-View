@@ -17,6 +17,13 @@ keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
     console.info("Authenticated")
   }
 
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+
   sessionStorage.setItem("authentication", keycloak.token);
   sessionStorage.setItem("refreshToken", keycloak.refreshToken);
 
@@ -37,13 +44,6 @@ keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
 }).error(() => {
   console.error("Authenticated Failed")
 })
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
