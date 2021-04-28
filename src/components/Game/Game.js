@@ -23,12 +23,15 @@ function Game() {
     }
 
     const onclick = (Option) => {
-        console.log("CLIKKED TEST!!!!")
         setTryCount(TryCount + 1)
         if (Option === Question.answer) {
             setGoodCount(GoodCount + 1)
         }
         setNewQuestion(getGameData());
+    }
+
+    function OnTimeEnd() {
+        alert('Time is up!\nYour score: ' + GoodCount)
     }
 
     return (
@@ -38,7 +41,7 @@ function Game() {
                     <Quiz OnClick={onclick} question={Question} />
                 </Col>
                 <Col xs={4}>
-                    <Stats tryCount={TryCount} GoodCount={GoodCount} />
+                    <Stats tryCount={TryCount} GoodCount={GoodCount} OnEnd={OnTimeEnd} />
                 </Col>
             </Row>
         </div>
@@ -46,5 +49,3 @@ function Game() {
 }
 
 export default Game;
-
-

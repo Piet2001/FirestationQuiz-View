@@ -7,7 +7,7 @@ const Stats = (props) => {
     return (
         <div className='Stats'>
             <h1>Stats</h1>
-            <Timer time={10} /> <br />
+            <Timer time={60} OnEnd={props.OnEnd} /> <br />
             <p>
                 Username: {'Demo_User'} <br />
                 Items played: {props.tryCount} <br />
