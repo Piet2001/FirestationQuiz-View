@@ -2,8 +2,6 @@ import React from 'react'
 import { Col, Row, Image, Button } from 'react-bootstrap'
 
 const Quiz = ({ OnClick, question }) => {
-    console.log("Question from quiz.js")
-    console.log(question.option1)
 
     return (
         <div className='Game'>

@@ -17,7 +17,9 @@ function Game() {
     const getGameData = async () => {
         const res = await fetch('http://localhost:8084/gamedata/new')
         const data = await res.json()
-        console.log(data);
+        if (data.answer === Question.answer) {
+            getGameData();
+        }
         //return data;
         setNewQuestion(data)
     }
