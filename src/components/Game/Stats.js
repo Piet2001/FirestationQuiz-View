@@ -9,7 +9,7 @@ const Stats = (props) => {
             <h1>Stats</h1>
             <Timer time={60} OnEnd={props.OnEnd} /> <br />
             <p>
-                Username: {props.keycloak.idTokenParsed.preferred_username} <br />
+                Username: {sessionStorage.getItem("userName")} <br />
                 Items played: {props.tryCount} <br />
                 Items Correct: {props.GoodCount} <br />
                 <br />

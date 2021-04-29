@@ -19,13 +19,14 @@ keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
 
   ReactDOM.render(
     <React.StrictMode>
-      <App keycloak={keycloak} />
+      <App />
     </React.StrictMode>,
     document.getElementById('root')
   );
 
   sessionStorage.setItem("authentication", keycloak.token);
   sessionStorage.setItem("refreshToken", keycloak.refreshToken);
+  sessionStorage.setItem("userName", keycloak.idTokenParsed.preferred_username)
 
   setTimeout(() => {
     keycloak.updateToken(70).success((refreshed) => {
