@@ -4,7 +4,7 @@ import Quiz from './Quiz'
 import Stats from './Stats'
 import { Col, Row } from 'react-bootstrap'
 
-function Game() {
+function Game(props) {
     const [TryCount, setTryCount] = useState(0);
     const [GoodCount, setGoodCount] = useState(0);
     const [Question, setNewQuestion] = useState({})
@@ -43,7 +43,7 @@ function Game() {
                     <Quiz OnClick={onclick} question={Question} />
                 </Col>
                 <Col xs={4}>
-                    <Stats tryCount={TryCount} GoodCount={GoodCount} OnEnd={OnTimeEnd} />
+                    <Stats tryCount={TryCount} GoodCount={GoodCount} OnEnd={OnTimeEnd} keycloak={props.keycloak} />
                 </Col>
             </Row>
         </div>

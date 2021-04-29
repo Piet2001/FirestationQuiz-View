@@ -4,11 +4,11 @@ import Footer from '../Footer/Footer'
 import Game from '../Game/Game'
 import "bootstrap/dist/css/bootstrap.min.css"
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Header />
-      <Game />
+      <Game keycloak={props.keycloak} />
       <Footer />
     </div>
   );
