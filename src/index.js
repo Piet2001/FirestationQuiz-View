@@ -26,6 +26,7 @@ keycloak.init({ onLoad: 'login-required' }).success((authenticated) => {
 
   sessionStorage.setItem("authentication", keycloak.token);
   sessionStorage.setItem("refreshToken", keycloak.refreshToken);
+  sessionStorage.setItem("userName", keycloak.idTokenParsed.preferred_username)
 
   setTimeout(() => {
     keycloak.updateToken(70).success((refreshed) => {
