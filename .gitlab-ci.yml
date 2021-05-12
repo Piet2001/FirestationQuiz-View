@@ -7,4 +7,4 @@ npm-test:
   stage: test
   script:
     - npm install
-    - npm test
+    - npm test -- --coverage
