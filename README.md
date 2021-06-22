@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Firestation Quiz
+
+[![pipeline status](https://git.fhict.nl/I434632/firestation-quiz-view/badges/master/pipeline.svg)](https://git.fhict.nl/I434632/firestation-quiz-view/-/commits/master)
+[![coverage report](https://git.fhict.nl/I434632/firestation-quiz-view/badges/master/coverage.svg)](https://git.fhict.nl/I434632/firestation-quiz-view/-/commits/master)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
